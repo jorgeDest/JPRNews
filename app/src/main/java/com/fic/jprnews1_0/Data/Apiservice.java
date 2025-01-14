@@ -19,8 +19,6 @@ public interface Apiservice {
     Call <List<Usuario>> getUsuario();
 
 
-
-
     @GET("Categorias")
     Call<List<Categoria>> getCategorias();
 
@@ -33,6 +31,6 @@ public interface Apiservice {
     @POST("register")
     Call <Usuario> CreateUsuario(@Body Usuario usuario);
 
-    @GET
+    @GET("CargarNoticias")
     Call<List<Noticia>> CargarNoticia();
 }

@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Selecciona un usuario"
-        android:minHeight="32dp"
+        android:minHeight="48dp"
         android:spinnerMode="dropdown" />
 
     <!-- Button para cargar las noticias -->
@@ -39,5 +39,20 @@
         android:textColor="@android:color/black"
         android:textSize="16sp"
         android:visibility="gone" />
+
+    <!-- ScrollView para los detalles de las noticias -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/txtDetalleNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles de las noticias seleccionadas"
+            android:textSize="16sp"
+            android:padding="16dp" />
+    </ScrollView>
 
 </LinearLayout>

@@ -1,6 +1,9 @@
 package com.fic.jprnews1_0;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +16,22 @@ public class InfoMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_info_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+
+
+    }
+    public void onCardClick(View view) {
+        int id = view.getId();
+
+        if (id == R.id.cardQuieneSomos) {
+            startActivity(new Intent(this, Quiensomos.class));
+        }
+        else if (id == R.id.cardContacto) {
+            startActivity(new Intent(this, Contactanos.class));
+        }  else {
+            Toast.makeText(this, "Opción no reconocida", Toast.LENGTH_SHORT).show();
+        }
     }
 }

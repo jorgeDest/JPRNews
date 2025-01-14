@@ -21,22 +21,22 @@ public class CategoriasMain extends AppCompatActivity {
         setContentView(R.layout.activity_categorias_main);
 
 
-            Switch switch1 = findViewById(R.id.switch1);
-            // Recuperar preferencia guardada
-            SharedPreferences preferences = getSharedPreferences("AppPreferences", MODE_PRIVATE);
-            boolean isDarkMode = preferences.getBoolean("isDarkMode", false);
-            switch1.setChecked(isDarkMode);
-            setDarkMode(isDarkMode);
+        Switch switch1 = findViewById(R.id.switch1);
+        // Recuperar preferencia guardada
+        SharedPreferences preferences = getSharedPreferences("AppPreferences", MODE_PRIVATE);
+        boolean isDarkMode = preferences.getBoolean("isDarkMode", false);
+        switch1.setChecked(isDarkMode);
+        setDarkMode(isDarkMode);
 
-            // Configurar listener para el Switch
-            switch1.setOnCheckedChangeListener((buttonView, isChecked) -> {
-                setDarkMode(isChecked);
+        // Configurar listener para el Switch
+        switch1.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            setDarkMode(isChecked);
 
-                // Guardar preferencia del usuario
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putBoolean("isDarkMode", isChecked);
-                editor.apply();
-            });
+            // Guardar preferencia del usuario
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putBoolean("isDarkMode", isChecked);
+            editor.apply();
+        });
 
     }
     private void setDarkMode(boolean isDarkMode) {
@@ -52,10 +52,7 @@ public class CategoriasMain extends AppCompatActivity {
 
         if (id == R.id.cardviewDeporte) {
             startActivity(new Intent(this, CategoriaDeporte.class));
-        } else if (id == R.id.cardviewPoliciaca) {
-            startActivity(new Intent(this, CategoriaPolicia.class));
-        } else if (id == R.id.cardviewUas) {
-            startActivity(new Intent(this, CategoriaUas.class));
+
         } else if (id == R.id.cardviewRegister) {
             startActivity(new Intent(this, Registro.class));
         } else {

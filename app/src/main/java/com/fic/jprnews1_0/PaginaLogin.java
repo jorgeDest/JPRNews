@@ -20,20 +20,20 @@ public class PaginaLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_login);
-        
+
     }
+
 
     public void onCardClick(View view) {
         int id = view.getId();
 
         if (id == R.id.cardviewNoticias) {
-            startActivity(new Intent(this, CategoriasMain.class));
-        } else if (id == R.id.CardviewDatosPersonales) {
-            startActivity(new Intent(this, perfil.class));
-        } else if (id == R.id.CardviewPreferencias) {
+            startActivity(new Intent(this, CategoriaDeporte.class));
+        }
+        else if (id == R.id.CardviewPreferencias) {
             startActivity(new Intent(this, addnews.class));
         } else if (id == R.id.CardviewInfo) {
-            startActivity(new Intent(this, Registro.class));
+            startActivity(new Intent(this, InfoMain.class));
         } else {
             Toast.makeText(this, "Opción no reconocida", Toast.LENGTH_SHORT).show();
         }

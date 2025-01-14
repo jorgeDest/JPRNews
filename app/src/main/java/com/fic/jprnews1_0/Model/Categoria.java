@@ -2,6 +2,7 @@ package com.fic.jprnews1_0.Model;
 
 public class Categoria {
     private int CategoriaID;
+
     private String Nombre;
 
 
@@ -10,9 +11,9 @@ public class Categoria {
         return CategoriaID;
     }
 
-    public void setCategoriaID(){
+    public void setCategoriaID(int categoriaID) {
 
-        this.CategoriaID = CategoriaID;
+        this.CategoriaID =categoriaID;
 
     }
 

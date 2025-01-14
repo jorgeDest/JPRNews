@@ -3,6 +3,7 @@ package com.fic.jprnews1_0.Model;
 public class Noticia {
 
     private int CategoriaID;
+    private Categoria categoria;
     private String Titulo,
             FechaPublicacion,
             Contenido,
@@ -61,5 +62,10 @@ public class Noticia {
     public void setNombre(String nombre) {
         this.Nombre = nombre;
     }
-}
 
+
+    @Override
+    public String toString() {
+        return Titulo; // Cambia "Titulo" si prefieres otro campo como "Nombre" o una combinación.
+    }
+}
