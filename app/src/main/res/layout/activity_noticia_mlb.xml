@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticiaMlb">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué sigue en la agencia libre de la MLB y en el mercado de cambios?"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="378dp"
+                app:srcCompat="@drawable/mlb" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mientras esperamos la próxima oleada de movimiento, aquí se muestran qué áreas de la temporada baja están muy activas y cuáles están muy frías en MLB."
+                android:textColor="#3F51B5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El mercado de agentes libres de las Grandes Ligas de Béisbol se ha enfriado desde una racha al rojo vivo en las reuniones de invierno de la MLB que incluyó a agentes libres de nivel medio y bajo que consiguieron fuertes acuerdos, además del contrato récord de $765 millones de dólares de Juan Soto con los New York Mets. Si bien se espera un puñado de fichajes antes de Navidad, el diluvio posterior a Soto que la mayoría en la industria previó no se ha materializado.  Los culpables son principalmente dos. Con los precios de los jugadores en un nivel superior, los equipos han recurrido al mercado de cambios como una alternativa, lo que ha dejado a la agencia libre estancada. Los equipos también reconocieron que el calendario funciona a su favor. Cuanto más se acerca la fecha de apertura de los campamentos de primavera en febrero, más difícil es para los jugadores mantenerse firmes en sus demandas.  El congelamiento eventualmente se descongelará. Demasiados equipos tienen dinero para gastar y huecos que llenar. Cada mercado libre evoluciona de manera diferente, y en este, liderado por Soto, el acuerdo de $218 millones de dólares de Max Fried con los New York Yankees y un par de contratos de $182 millones de dólares para Willy Adames (San Francisco) y Blake Snell (Los Angeles Dodgers), ya se han comprometido %2,000 millones de dólares con 43 agentes libres de las Grandes Ligas.  Eso es más de $250 millones de dólares más que la proyección de Kiley McDaniel de ESPN para esos jugadores. Él ha proyectado que el gasto total en el invierno superará los $3,550 millones de dólares, y con un puñado de jugadores de renombre y una gran cantidad de jugadores sólidos de nivel medio que permanecen en el mercado, debería superar esa cifra.  Mientras tanto, el juego de la espera ha comenzado. Aquí se muestra la situación de cada uno de los distintos mercados de temporada baja, comenzando con el que tiene más acción en este momento."
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticiaPolicia2">
+
+    <ScrollView
+        android:id="@+id/scrollView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="Hombre es herido bala en Alturas del Sur, Culiacán tras reportes de balaceras"
+                android:textColor="#0C0A0A"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="match_parent"
+                android:layout_height="392dp"
+                app:srcCompat="@drawable/cruzroja" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="De acuerdo a la información que trascendió, minutos después de las 19 horas de este día, personal de trabajo social de un nosocomio reportó a las autoridades el ingreso de un paciente lesionado por proyectil de arma de fuego.El reporte fue tomado por elementos de la Policía Estatal Preventiva, quiénes, al arribar a la institución médica, confirmaron la presencia de un masculino identificado como Carlos Federico ‘N’, de 26 años de edad."
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="282dp"
+                app:srcCompat="@drawable/hombre" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Al solicitar más información del paciente, se les dio a conocer a los elementos policiacos que la víctima fue intervenido de emergencia debido que arribó con un impacto de bala en la cabeza y también estaba lesionado de ambas piernas.  El caso fue tomado por agentes de investigación de la Fiscalía General del Estado, quienes se encargarían de investigar dónde ocurrieron los hechos y sobre él o los responsables de la agresión"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

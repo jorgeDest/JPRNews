@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticiaMaduena">
+
+    <ScrollView
+        android:id="@+id/scrollView13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4"
+                android:text="150 MDP son una “pastillita” que no soluciona el déficit: Madueña"
+                android:textAlignment="center"
+                android:textColor="#070505"
+                android:textSize="34sp" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="399dp"
+                android:layout_height="331dp"
+                app:srcCompat="@drawable/madue_a" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El rector de la Universidad Autónoma de Sinaloa (UAS) Jesús Madueña , habló sobre el enorme déficit histórico de la institución y explicó que  el monto solicitado  al congreso y la posterior reasignación del presupuesto no son suficiente para solucionar el problema. "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“Tenemos un déficit de mil 200 millones” expresó. “Nosotros ocupamos una cantidad para salir del año y tenemos menos. Eso es una pastillita  para ir paleando el déficit del cierre del año”.  "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informó que para diciembre del próximo año se necesitarán entre seiscientos y setecientos millones de pesos. Explicó que son las jubilaciones las que representan un gasto muy elevado para  la Universidad, con dos mil 400 millones de pesos. "
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

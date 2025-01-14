@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fic.jprnews1_0.PaginaLogin1">
+    <item
+        android:id="@+id/QUIEN"
+        android:orderInCategory="100"
+        android:title="Quien somos"
+        app:showAsAction="never" />
+    <item android:title="Inicio sesion" />
+    <item android:title="Registro" />
+</menu>

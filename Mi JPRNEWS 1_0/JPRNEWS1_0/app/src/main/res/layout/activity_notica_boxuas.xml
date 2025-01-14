@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticaBOXUAS">
+
+    <ScrollView
+        android:id="@+id/scrollView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4"
+                android:text="La UAS tendrá evento de boxeo internacional en Mazatlán"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/boxuas" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La Universidad Autónoma de Sinaloa tendrá un evento de box de corte internacional.  Se trata combates amistosos que sostendrán un equipo canadiense de boxeo contra la selección mayor de boxeo de las Águilas UAS, los días 12 y 13 de diciembre en el gimnasio de la UAS de nombre José Sulaimán, en Mazatlán."
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="302dp"
+                app:srcCompat="@drawable/uasa" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gilberto Berrelleza Reyes, director de deportes UAS, agregó que estarán de manteles largos por este evento de corte internacional para las Águilas UAS.  “Estamos contentos por esta gestión que han realizado el vicerrector de la unidad regional sur, Iván Tostado, el entrenador de boxeo en Mazatlán, Radamés Hernández, así como Álex Bodart, jefe de rama de boxeo”." />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

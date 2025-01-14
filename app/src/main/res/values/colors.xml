@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Colores Principales -->
+    <color name="primary">#6200EE</color> <!-- Morado para botones y elementos destacados -->
+    <color name="primary_dark">#3700B3</color> <!-- Versión oscura del color principal -->
+    <color name="accent">#03DAC5</color> <!-- Color de acento, un verde menta -->
+
+    <!-- Colores de Fondo -->
+    <color name="background">#FFFFFF</color> <!-- Blanco puro -->
+    <color name="surface">#F5F5F5</color> <!-- Gris claro para fondos secundarios -->
+
+    <!-- Colores de Texto -->
+    <color name="text_primary">#212121</color> <!-- Negro para texto principal -->
+    <color name="text_secondary">#757575</color> <!-- Gris oscuro para texto secundario -->
+
+    <!-- Colores de Bordes y Sombras -->
+    <color name="border">#E0E0E0</color> <!-- Gris claro para bordes o divisores -->
+
+    <!-- Colores de Error -->
+    <color name="error">#B00020</color> <!-- Rojo para mensajes de error -->
+
+    <!-- Transparencias -->
+    <color name="transparent_black">#80000000</color> <!-- Negro semitransparente -->
+    <color name="transparent_white">#80FFFFFF</color> <!-- Blanco semitransparente -->
+</resources>

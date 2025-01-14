@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Noticiapolicia3">
+
+    <ScrollView
+        android:id="@+id/scrollView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="Encuentran cuerpo sin vida con impactos de bala en un camino de terracería de Costa Rica, en Culiacán"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="match_parent"
+                android:layout_height="357dp"
+                app:srcCompat="@drawable/cinta" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextViewUn hombre sin vida y con varios impactos de bala en el cuerpo fue localizado este viernes en las inmediaciones de un campo agrícola en la sindicatura de Costa Rica, en el municipio de Culiacán.A través de un reporte al 911 se alertó a las autoridades de Seguridad Pública Estatal sobre el hallazgo del cuerpo sin vida de un hombre, mismo que hasta el momento no ha sido identificado, ubicado en un camino de terracería."
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="match_parent"
+                android:layout_height="382dp"
+                app:srcCompat="@drawable/cuerpo" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Policías municipales arribaron al sitio y confirmaron el hecho. El cuerpo fue encontrado por los agentes bocarriba con diversas lesiones por proyectil, y vestía playera azul, pantalón azul de mezclilla y tenis negros.   Elementos de la Fiscalía General del Estado acudieron para iniciar los trabajos de campo y comenzar con la investigación del hecho, y se solicitó la presencia del Servicio Médico Forense para el traslado del cuerpo para realizar la autopsia de ley. Permanecerá resguardado hasta ser identificado por familiares." />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

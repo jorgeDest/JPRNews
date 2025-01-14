@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".allnews">
+
+    <!-- Spinner para seleccionar el usuario -->
+    <Spinner
+        android:id="@+id/spinner_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecciona un usuario"
+        android:minHeight="32dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Button para cargar las noticias -->
+    <Button
+        android:id="@+id/btnCargarNoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cargar Noticias"
+        android:layout_gravity="center" />
+
+    <!-- TextView para mostrar las noticias -->
+    <TextView
+        android:id="@+id/txtNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:text="Noticias aparecerán aquí..."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

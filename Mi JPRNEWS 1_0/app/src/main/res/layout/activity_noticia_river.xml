@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticiaRiver">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="River gana 1-0 a boca"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                app:srcCompat="@drawable/river" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="true"
+                android:text="River comenzó mucho mejor parado en el campo y tomó la iniciativa, con buenas combinaciones por los costados y con aproximaciones desde pelota parada. Andrés Herrera tuvo la primera y luego Nico De La Cruz ubicó a Salomón Rondón, pero el venezolano no pudo acomodarse para definir cómodo. En una de las pocas que tuvo Boca, Franco Armani salió rápido para atorar a Darío Benedetto en un mano a mano. Luego, todo fue del Millonario en la primera parte.  Esequiel Barco se escapó por izquierda y sacó un remate cruzado que se fue desviado; después, Leandro González Pirez no pudo aprovechar una serie de rebotes en un tiro de esquina. Finalmente, el 1-0 llegó luego de un remate de Enzo Pérez que se desvió en Rondón para descolocar a Sergio Romero. Antes del final, Manuel Lanzini estuvo muy cerca del segundo, pero el arquero local tapó su zurdazo.  Boca apretó más en el arranque del complemento, contó con un par de llegadas y Paulo Díaz se mostró muy firme en un cruce clave. River recuperó en ataque, Barco se perfiló y tiró a colocar: la pelota le picó adelante a Romero y casi se le mete luego de su floja reacción. El Millonario volvió a asociarse, Rondón se escapó y no logró meter un zurdazo preciso ante el achique de la defensa local.  En el último tramo, y más allá de algunos avances de Boca, River paró muy bien y fue en busca del segundo, que finalmente llegó luego de un mano a mano de Facundo Colidio y la aparición goleadora de Enzo Díaz. De esta manera, el Millonario se quedó con los dos superclásicos del año y se acomodó en la Zona A de la Copa de la Liga Profesional de Fútbol." />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

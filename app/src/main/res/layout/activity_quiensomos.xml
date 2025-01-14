@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Quiensomos">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="22dp"
+        android:text="¿Quienes somos?"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="En JPR NEWS creemos en un periodismo cercano y transparente. Nuestro equipo está formado por profesionales apasionados por mantener a la audiencia informada y, sobre todo, conectada. Trabajamos día a día para ofrecer noticias relevantes, actualizadas y accesibles. Esto nos ha permitido crear un espacio atractivo tanto para los consumidores de noticias tradicionales como para las nuevas generaciones"
+        android:textAlignment="gravity"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/pulgar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="396dp"
+        android:layout_height="294dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="109dp"
+        android:text="Nuestro equipo está formado por profesionales apasionados por el periodismo y la comunicación, que trabajan diariamente para cubrir los temas de mayor impacto y relevancia social. Además, creemos en la importancia de la participación activa de nuestros lectores, por lo que hemos implementado herramientas que permiten la interacción directa y el intercambio de opiniones en nuestra plataforma.  Gracias a opciones como la selección de preferencias, el modo nocturno y nuestra comunidad participativa, JPR NEWS se posiciona como un referente informativo especialmente atractivo para las nuevas generaciones, marcando la diferencia con un estilo fresco, accesible y centrado en los intereses de nuestra audiencia."
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

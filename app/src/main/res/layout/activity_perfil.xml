@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Imagen de perfil -->
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="Profile Picture"
+        android:onClick="onChangeProfilePicture"
+        android:scaleType="centerCrop" />
+
+    <!-- Primer TextView -->
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Nombre usuario"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <!-- Segundo TextView -->
+    <TextView
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Correo Electronico"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/btnActualizarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Actualizar datos"
+        android:onClick="irLogin" />
+
+</LinearLayout>
