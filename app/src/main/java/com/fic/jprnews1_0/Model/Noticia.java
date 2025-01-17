@@ -8,6 +8,16 @@ public class Noticia {
             FechaPublicacion,
             Contenido,
             Nombre;
+
+    public String getNombreCategoria() {
+        return NombreCategoria;
+    }
+
+    public String getNombreUsuario() {
+        return NombreUsuario;
+    }
+
+    private String NombreUsuario,NombreCategoria;
     private int UsuarioID;
 
     /////////////////////////////////
@@ -64,8 +74,4 @@ public class Noticia {
     }
 
 
-    @Override
-    public String toString() {
-        return Titulo; // Cambia "Titulo" si prefieres otro campo como "Nombre" o una combinación.
-    }
 }

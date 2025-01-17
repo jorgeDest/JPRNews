@@ -26,22 +26,22 @@ public class CategoriaDeporte extends AppCompatActivity {
     private UsuarioInteractor usuarioInteractor;
     private TextView txtDetalleNoticia;
     private Button btnCargarNoti;
-    private List<Noticia> categoriaList;
+    private List<Noticia> Noticialist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categoria_deporte);
 
-        // Inicializar elementos de la interfaz
+
         txtDetalleNoticia = findViewById(R.id.txtDetalleNoticia);
         btnCargarNoti = findViewById(R.id.btnCargarNoti);
 
-        // Inicializar el servicio API y el interactor
+        //Instancias
         Apiservice apiService = Retrofitistance.getRetrofitInstance().create(Apiservice.class);
         usuarioInteractor = new UsuarioInteractor(new UsuarioRepository(apiService));
 
-        // Configurar el evento OnClick para el botón
+        //Boton de llamada para el metodo
         btnCargarNoti.setOnClickListener(v -> CargarNoticias());
     }
 
@@ -50,10 +50,10 @@ public class CategoriaDeporte extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Noticia>> call, Response<List<Noticia>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    categoriaList = response.body();
+                    Noticialist = response.body();
 
                     // Filtrar noticias con CategoriaID == 0
-                    List<Noticia> noticiasCategoria0 = new ArrayList<>();
+                    /*List<Noticia> noticiasCategoria0 = new ArrayList<>();
                     for (Noticia noticia : categoriaList) {
                         if (noticia.getCategoriaID() == 0) { // Filtrar por CategoriaID 0
                             noticiasCategoria0.add(noticia);
@@ -63,15 +63,17 @@ public class CategoriaDeporte extends AppCompatActivity {
                     if (noticiasCategoria0.isEmpty()) {
                         Toast.makeText(CategoriaDeporte.this, "No hay noticias de categoría 0", Toast.LENGTH_SHORT).show();
                         return;
-                    }
+                    }*/
 
-                    // Mostrar solo las noticias filtradas
                     StringBuilder noticiasFiltradas = new StringBuilder();
-                    for (Noticia noticia : noticiasCategoria0) {
+                    for (Noticia noticia : Noticialist) {
                         noticiasFiltradas.append("Titulo: ").append(noticia.getTitulo()).append("\n")
-                                .append("Autor: ").append(noticia.getNombre()).append("\n")
+                                .append("Autor: ").append(noticia.getNombreUsuario()).append("\n")
+                                .append("Categoria: ").append(noticia.getNombreCategoria()).append("\n")
                                 .append("Fecha Publicación: ").append(noticia.getFechaPublicacion()).append("\n")
                                 .append("Contenido: ").append(noticia.getContenido()).append("\n\n");
+
+
                     }
 
                     txtDetalleNoticia.setVisibility(View.VISIBLE);
@@ -81,7 +83,6 @@ public class CategoriaDeporte extends AppCompatActivity {
                     Toast.makeText(CategoriaDeporte.this, "Error al cargar noticias", Toast.LENGTH_SHORT).show();
                 }
             }
-
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
                 Toast.makeText(CategoriaDeporte.this, "Error de conexión: " + t.getMessage(), Toast.LENGTH_SHORT).show();

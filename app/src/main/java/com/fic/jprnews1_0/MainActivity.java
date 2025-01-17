@@ -76,16 +76,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Usuario> call, Response<Usuario> response) {
                 if (response.isSuccessful()) {
-                    // Guardar el ID del usuario en SharedPreferences
-                    /*SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
-
-
-                    String userId = String.valueOf(response.body().getUsuarioID());
-                    editor.putString("userId", userId);
-                    editor.apply();*/
-
-                    // Navegar a la siguiente página
                     Intent intent = new Intent(MainActivity.this, PaginaLogin.class);
                     startActivity(intent);
                     Toast.makeText(MainActivity.this, "Sesión iniciada con éxito", Toast.LENGTH_SHORT).show();
